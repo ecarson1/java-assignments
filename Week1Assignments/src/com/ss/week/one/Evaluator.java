@@ -2,12 +2,12 @@ package com.ss.week.one;
 
 public class Evaluator {
 
-	PerformOperation isOdd() {
+	public PerformOperation isOdd() {
 		PerformOperation op = (int i) -> i % 2 == 0? false: true;
 		return op;
 	}
 	
-	PerformOperation isPrime() {
+	public PerformOperation isPrime() {
 		PerformOperation op = (int i) -> {
 			int sqrt = (int) Math.sqrt(i); // cut-off when searching for factors
 			for(int idx = 2; idx <= sqrt; idx++) {
@@ -20,7 +20,7 @@ public class Evaluator {
 		return op;
 	}
 	
-	PerformOperation isPalindrome() {
+	public PerformOperation isPalindrome() {
 		PerformOperation op = (int i) -> {
 			String str = String.valueOf(i);
 			int start = 0;
